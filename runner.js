@@ -88,15 +88,14 @@ var JSHINT = require('jshint').JSHINT,
 	},
 	handling = false,
 	data = '',
-	contentLength;
+	contentLength = 0;
 
 process.stdin.resume();
 process.stdin.setEncoding('utf8');
 process.stdin.on('data', function (chunk) {
-	var indexOfFirstLineBreak;
 	if (!handling) {
 		handling = true;
-		indexOfFirstLineBreak = chunk.indexOf('\n');
+		var indexOfFirstLineBreak = chunk.indexOf('\n');
 		contentLength = +chunk.substring(0, indexOfFirstLineBreak);
 		data = chunk.substring(indexOfFirstLineBreak + 1);
 	} else {

@@ -18,8 +18,8 @@ def unload_handler():
 class EventHandler(sublime_plugin.EventListener):
 	def on_pre_save(self, view):
 		if splitext(basename(view.settings().get("syntax")))[0] == "JavaScript":
-			toSend = view.substr(sublime.Region(0, view.size()))
-			p.stdin.write((str(len(toSend)) + '\n' + toSend).encode("utf8"))
+			content_length = view.size()
+			p.stdin.write((str(content_length) + '\n' + view.substr(sublime.Region(0, content_length))).encode("utf8"))
 			ret = p.stdout.readline().strip()
 			if ret:
 				arr = json.loads(ret)
