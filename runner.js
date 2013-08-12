@@ -122,4 +122,6 @@ function handleInput() {
 		process.stdout.write('\n');
 	}
 	handling = false;
+	data = '';
+	contentLength = 0;
 }
