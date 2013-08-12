@@ -1,7 +1,6 @@
-Sublime-SemicolonfierJS
-=======================
+# SemicolonfierJS
 
-## Inserts lacking semicolons on save for JS files (Sublime Text 2)
+#### Inserts lacking semicolons on save for JS files (Sublime Text 2)
 
 ## WARNING
 
