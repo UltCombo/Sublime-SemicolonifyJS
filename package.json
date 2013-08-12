@@ -1,0 +1,9 @@
+{
+	"name": "Sublime-SemicolonfierJS",
+	"description": "Automatically semicolonfies your JS files upon save.",
+	"version": "0.0.2",
+	"author": "Ult Combo",
+	"dependencies": {
+		"jshint": "2.1.9"
+	}
+}
