@@ -86,27 +86,27 @@ var JSHINT = require('jshint').JSHINT,
 		// Custom Globals
 		//"globals"       : {}        // additional predefined global variables
 	},
-	handling = false,
-	data = '',
+	receivedFirstChunk = false,
+	codeToLint = '',
 	contentLength = 0;
 
 process.stdin.resume();
 process.stdin.setEncoding('utf8');
 process.stdin.on('data', function (chunk) {
-	if (!handling) {
-		handling = true;
+	if (!receivedFirstChunk) {
+		receivedFirstChunk = true;
 		var indexOfFirstLineBreak = chunk.indexOf('\n');
 		contentLength = +chunk.substring(0, indexOfFirstLineBreak);
-		data = chunk.substring(indexOfFirstLineBreak + 1);
+		codeToLint = chunk.substring(indexOfFirstLineBreak + 1);
 	} else {
-		data += chunk;
+		codeToLint += chunk;
 	}
-	if (data.length === contentLength) handleInput();
+	if (codeToLint.length === contentLength) doLint();
 });
 
-function handleInput() {
+function doLint() {
 	//[TABHACK] suppress indentation warnings
-	if (!JSHINT('//jshint -W015\n' + data, options)) {
+	if (!JSHINT('//jshint -W015\n' + codeToLint, options)) {
 		var errors = JSHINT.errors,
 			ret = [];
 		for (var i = 0; i < errors.length; i++) {
@@ -121,7 +121,7 @@ function handleInput() {
 	} else {
 		process.stdout.write('\n');
 	}
-	handling = false;
-	data = '';
+	receivedFirstChunk = false;
+	codeToLint = '';
 	contentLength = 0;
 }
