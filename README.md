@@ -2,7 +2,7 @@
 
 **Automatically semicolonifies your JS files upon save. (Sublime Text 2)**
 
-Extremely useful for OCD-like JS coders that can't stand a missing semicolon but are also aware that their lives are too short to manually semicolonify their code.
+Extremely useful for OCD-like JS coders that can't stand a missing semicolon but are also aware that their lives are too short to manually semicolonify code.
 
 ## How it works
 
