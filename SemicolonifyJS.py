@@ -20,7 +20,7 @@ class EventHandler(sublime_plugin.EventListener):
 		if splitext(basename(view.settings().get("syntax")))[0] == "JavaScript":
 			content_length = view.size()
 			p.stdin.write((str(content_length) + '\n' + view.substr(sublime.Region(0, content_length))).encode("utf8"))
-			ret = p.stdout.readline().strip()
+			ret = p.stdout.readline().rstrip()
 			if ret:
 				arr = json.loads(ret)
 				edit = view.begin_edit()

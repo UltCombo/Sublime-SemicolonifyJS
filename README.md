@@ -1,6 +1,6 @@
 # SemicolonfierJS
 
-#### Automatically semicolonfies your JS files upon save. (Sublime Text 2)
+#### Automatically semicolonifies your JS files upon save. (Sublime Text 2)
 
 ## WARNING
 
