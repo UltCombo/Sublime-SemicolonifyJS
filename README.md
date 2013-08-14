@@ -1,4 +1,4 @@
-# SemicolonfierJS
+# SemicolonifyJS
 
 #### Automatically semicolonifies your JS files upon save. (Sublime Text 2)
 
