@@ -18,6 +18,8 @@ cd SemicolonifyJS
 npm install
 ```
 
+Note that Node 0.10.x is having some compatibility issues with the JSHint 1.9.1 dependency, I suggest installing the dependencies with a Node version between 0.6.21 and 0.8.18.
+
 Restart ST and you're all set.
 
 ## Notes
