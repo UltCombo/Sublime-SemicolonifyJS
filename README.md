@@ -18,13 +18,11 @@ cd SemicolonifyJS
 npm install
 ```
 
-Note that Node 0.10.x is having some compatibility issues with the JSHint 1.9.1 dependency, I suggest installing the dependencies with a Node version between 0.6.21 and 0.8.18.
-
 Restart ST and you're all set.
 
 ## Notes
 
-- Note that the plugin currently works on top of JSHint's "missing semicolon" warning, which is rather generic. For example, if you have `foo 1+1`, upon save you will get `foo; 1+1;`. You're expected to fix syntax errors such as this one before hitting <kbd>Ctrl</kbd>+<kbd>S</kbd>.
+- Note that the plugin currently works on top of JSHint's "missing semicolon" warning, which is rather generic. For example, if you have `foo 1+1`, upon save you will get `foo; 1+1;`. You're expected to fix syntax errors such as this one before hitting <kbd>Ctrl</kbd>+<kbd>S</kbd>. In the worst case, you can always <kbd>Ctrl</kbd>+<kbd>Z</kbd>, fix the errors and save again.
 
     A good way to watch for these is having [SublimeLinter](https://github.com/SublimeLinter/SublimeLinter) with background linting activated so you can check the possible errors before saving. In this case, I'd suggest setting the `"asi": true` JSHint option in the SublimeLinter user settings so that it won't report the missing semicolons which will be automatically handled by SemicolonifyJS.
 
