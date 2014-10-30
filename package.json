@@ -2,7 +2,19 @@
 	"name": "Sublime-SemicolonfierJS",
 	"description": "Automatically semicolonfies your JS files upon save.",
 	"version": "0.0.2",
-	"author": "Ult Combo",
+	"author": {
+	  "name": "Ult Combo",
+	  "email": "ultcombo@gmail.com"
+	},
+	"repository": {
+	  "type": "git",
+	  "url": "https://github.com/UltCombo/Sublime-SemicolonifyJS.git"
+	},
+	"bugs": {
+	  "url": "https://github.com/UltCombo/Sublime-SemicolonifyJS/issues"
+	},
+	"homepage": "https://github.com/UltCombo/Sublime-SemicolonifyJS",
+	"license": "MIT",
 	"dependencies": {
 		"jshint": "^2.5.8"
 	}
