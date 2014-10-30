@@ -1,3 +1,7 @@
+# OBSOLETE
+
+This plugin has been superseded by [fixmyjs](https://github.com/jshint/fixmyjs)'s [Sublime Text plugin](https://github.com/addyosmani/sublime-fixmyjs), which provides the functionality contained in this plugin plus much more.
+
 # SemicolonifyJS
 
 **Automatically semicolonifies your JS files upon save. (Sublime Text 2)**
