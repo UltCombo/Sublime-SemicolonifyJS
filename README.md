@@ -4,7 +4,7 @@ This plugin has been superseded by [fixmyjs](https://github.com/jshint/fixmyjs)'
 
 # SemicolonifyJS
 
-**Automatically semicolonifies your JS files upon save. (Sublime Text 2)**
+**Automatically semicolonifies your JS files upon save. (Sublime Text 2/3)**
 
 Extremely useful for OCD-like JS coders that can't stand a missing semicolon but are also aware that their lives are too short to manually semicolonify code.
 
@@ -14,10 +14,11 @@ Extremely useful for OCD-like JS coders that can't stand a missing semicolon but
 
 ## Installation
 
-Have Node, npm and Git installed. You must also have Node in your `PATH`. Now go to ST's packages directory (`Preferences` > `Browse Packages...`), clone this repo and install the dependencies:
+Have Node, npm and Git installed. You must also have Node in your `PATH`. Now go to ST's packages directory (`Preferences` > `Browse Packages...`), clone the repository branch which corresponds to your ST version (ST3 = `master` branch, ST2 = `ST2` branch) and install the dependencies:
 
-```
-git clone https://github.com/UltCombo/Sublime-SemicolonifyJS.git SemicolonifyJS
+```shell
+# if you're using ST2, change "master" to "ST2" in the -b option below
+git clone -b master https://github.com/UltCombo/Sublime-SemicolonifyJS.git SemicolonifyJS
 cd SemicolonifyJS
 npm install
 ```
