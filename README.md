@@ -14,7 +14,7 @@ Extremely useful for OCD-like JS coders that can't stand a missing semicolon but
 
 ## Installation
 
-Have Node, NPM and Git installed. You must also have Node in your `PATH`. Now go to ST's packages directory (`Preferences` > `Browse Packages...`), clone this repo and install the dependencies:
+Have Node, npm and Git installed. You must also have Node in your `PATH`. Now go to ST's packages directory (`Preferences` > `Browse Packages...`), clone this repo and install the dependencies:
 
 ```
 git clone https://github.com/UltCombo/Sublime-SemicolonifyJS.git SemicolonifyJS
