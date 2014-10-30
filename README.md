@@ -12,7 +12,7 @@ Extremely useful for OCD-like JS coders that can't stand a missing semicolon but
 
 ![SemicolonifyJS demo](http://i.imgur.com/9on3B9d.gif)
 
-## Installation
+## Install
 
 Have Node, npm and Git installed. You must also have Node in your `PATH`. Now go to ST's packages directory (`Preferences` > `Browse Packages...`), clone the repository branch which corresponds to your ST version (ST3 = `master` branch, ST2 = `ST2` branch) and install the dependencies:
 
