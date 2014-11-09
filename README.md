@@ -1,4 +1,4 @@
-# OBSOLETE
+# DEPRECATED
 
 This plugin has been superseded by [fixmyjs](https://github.com/jshint/fixmyjs)'s [Sublime Text plugin](https://github.com/addyosmani/sublime-fixmyjs), which provides the functionality contained in this plugin plus much more.
 
